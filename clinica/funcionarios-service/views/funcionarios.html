@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt=BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionarios-Service</title>
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2><u>Lista de Funcionarios</u></h2>
+        <br>
+        <div class="funcionarios">
+            <% for(let i=0; i<funcionarios.length; i++){ %>
+                <p>Nome: <%= funcionarios[i].nome %></p>
+                <p>Data da Contratação: <%= funcionarios[i].data_contratacao %></p>
+                <% if(funcionarios[i].status === true){ %>
+                    <p>Status: Empregado(a)</p>
+                <% } else { %>
+                    <p>Status: Não é mais funcionário</p>
+                    <p>Data da Demissão: <%= funcionarios[i].data_demissao %></p>
+                <% } %>
+                <p>Cargo: <%= funcionarios[i].cargo %></p>
+                <br>
+                <hr>
+                <br>
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>

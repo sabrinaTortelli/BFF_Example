@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt=BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes-Service</title>
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2><u>Lista de Clientes</u></h2>
+        <br>
+        <div class="clientes">
+        <% for(let i=0; i<clientes.length; i++){ %>
+                <p><b><i>Cliente <%= clientes[i].cliente_id %></i></b></p>
+                <br>
+                <p>Nome: <%= clientes[i].nome %></p>
+                <p>Endereço: <%= clientes[i].endereco %></p>
+                <p>Telefone: <%= clientes[i].telefone %></p>
+                <br>
+                <hr>
+                <br>
+
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>

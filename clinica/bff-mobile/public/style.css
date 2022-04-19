@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+.container{
+    margin: 50px auto;
+    max-width: 400px;
+    background-color: rgb(230,230,230);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: left;
+}
+
+.animais, .funcionarios, .clientes{
+    font-size: 15px;
+}
